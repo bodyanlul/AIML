@@ -1,0 +1,11 @@
+C:\Users\bogdan\source\repos\AIML1\AIML1\bin\Debug\AIML1.exe.config
+C:\Users\bogdan\source\repos\AIML1\AIML1\bin\Debug\AIML1.exe
+C:\Users\bogdan\source\repos\AIML1\AIML1\bin\Debug\AIML1.pdb
+C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.csproj.AssemblyReference.cache
+C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.csproj.SuggestedBindingRedirects.cache
+C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.Form1.resources
+C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.Properties.Resources.resources
+C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.csproj.GenerateResource.cache
+C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.csproj.CoreCompileInputs.cache
+C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.exe
+C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.pdb
