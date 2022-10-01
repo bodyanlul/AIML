@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.A = new System.Windows.Forms.DataGridView();
             this.index = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lower = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,9 +40,6 @@
             this.lowerB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.upperB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.C = new System.Windows.Forms.DataGridView();
-            this.alphalvlC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lowerC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.upperC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,6 +57,13 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.indexC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lowerC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.upperC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.A)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.C)).BeginInit();
@@ -130,31 +134,13 @@
             // 
             this.C.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.C.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.alphalvlC,
+            this.indexC,
             this.lowerC,
             this.upperC});
             this.C.Location = new System.Drawing.Point(12, 302);
             this.C.Name = "C";
             this.C.Size = new System.Drawing.Size(193, 124);
             this.C.TabIndex = 2;
-            // 
-            // alphalvlC
-            // 
-            this.alphalvlC.HeaderText = "alpha lvl";
-            this.alphalvlC.Name = "alphalvlC";
-            this.alphalvlC.Width = 50;
-            // 
-            // lowerC
-            // 
-            this.lowerC.HeaderText = "Нижняя";
-            this.lowerC.Name = "lowerC";
-            this.lowerC.Width = 50;
-            // 
-            // upperC
-            // 
-            this.upperC.HeaderText = "Верхняя";
-            this.upperC.Name = "upperC";
-            this.upperC.Width = 50;
             // 
             // label1
             // 
@@ -185,17 +171,17 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(334, 22);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(580, 404);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
+            this.chart1.Size = new System.Drawing.Size(655, 443);
             this.chart1.TabIndex = 6;
             this.chart1.Text = "chart1";
             // 
@@ -267,72 +253,141 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(228, 248);
+            this.button1.Location = new System.Drawing.Point(228, 215);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 35);
             this.button1.TabIndex = 13;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(279, 248);
+            this.button2.Location = new System.Drawing.Point(279, 215);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(35, 35);
             this.button2.TabIndex = 14;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(228, 289);
+            this.button3.Location = new System.Drawing.Point(228, 256);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(35, 35);
             this.button3.TabIndex = 15;
             this.button3.Text = "*";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(279, 289);
+            this.button4.Location = new System.Drawing.Point(279, 256);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(35, 35);
             this.button4.TabIndex = 16;
             this.button4.Text = "/";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(229, 330);
+            this.button5.Location = new System.Drawing.Point(229, 297);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(86, 23);
             this.button5.TabIndex = 17;
             this.button5.Text = "Построить А";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(228, 388);
+            this.button6.Location = new System.Drawing.Point(228, 355);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(86, 23);
             this.button6.TabIndex = 18;
             this.button6.Text = "Построить С";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(228, 359);
+            this.button7.Location = new System.Drawing.Point(228, 326);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(86, 23);
             this.button7.TabIndex = 19;
             this.button7.Text = "Построить В";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
+            // 
+            // indexC
+            // 
+            this.indexC.HeaderText = "alpha lvl";
+            this.indexC.Name = "indexC";
+            this.indexC.Width = 50;
+            // 
+            // lowerC
+            // 
+            this.lowerC.HeaderText = "Нижняя";
+            this.lowerC.Name = "lowerC";
+            this.lowerC.Width = 50;
+            // 
+            // upperC
+            // 
+            this.upperC.HeaderText = "Верхняя";
+            this.upperC.Name = "upperC";
+            this.upperC.Width = 50;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(231, 38);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(86, 23);
+            this.button8.TabIndex = 20;
+            this.button8.Text = "Сравнить";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.Button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(227, 413);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(86, 23);
+            this.button9.TabIndex = 23;
+            this.button9.Text = "Очистить В";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(227, 442);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(86, 23);
+            this.button10.TabIndex = 22;
+            this.button10.Text = "Очистить С";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.Button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(228, 384);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(86, 23);
+            this.button11.TabIndex = 21;
+            this.button11.Text = "Очистить А";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.Button11_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 450);
+            this.ClientSize = new System.Drawing.Size(1000, 483);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -355,6 +410,7 @@
             this.Controls.Add(this.A);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.A)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.B)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.C)).EndInit();
@@ -375,9 +431,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn lowerB;
         private System.Windows.Forms.DataGridViewTextBoxColumn upperB;
         private System.Windows.Forms.DataGridView C;
-        private System.Windows.Forms.DataGridViewTextBoxColumn alphalvlC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lowerC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn upperC;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -395,6 +448,13 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indexC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lowerC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn upperC;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
     }
 }
 

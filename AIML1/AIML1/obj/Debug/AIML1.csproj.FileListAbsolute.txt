@@ -9,3 +9,13 @@ C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.csproj.GenerateResource
 C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.csproj.CoreCompileInputs.cache
 C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.exe
 C:\Users\bogdan\source\repos\AIML1\AIML1\obj\Debug\AIML1.pdb
+C:\Users\User.DESKTOP-Q2FT676\Desktop\AIML1\AIML1\bin\Debug\AIML1.exe.config
+C:\Users\User.DESKTOP-Q2FT676\Desktop\AIML1\AIML1\bin\Debug\AIML1.exe
+C:\Users\User.DESKTOP-Q2FT676\Desktop\AIML1\AIML1\bin\Debug\AIML1.pdb
+C:\Users\User.DESKTOP-Q2FT676\Desktop\AIML1\AIML1\obj\Debug\AIML1.csprojAssemblyReference.cache
+C:\Users\User.DESKTOP-Q2FT676\Desktop\AIML1\AIML1\obj\Debug\AIML1.Form1.resources
+C:\Users\User.DESKTOP-Q2FT676\Desktop\AIML1\AIML1\obj\Debug\AIML1.Properties.Resources.resources
+C:\Users\User.DESKTOP-Q2FT676\Desktop\AIML1\AIML1\obj\Debug\AIML1.csproj.GenerateResource.cache
+C:\Users\User.DESKTOP-Q2FT676\Desktop\AIML1\AIML1\obj\Debug\AIML1.csproj.CoreCompileInputs.cache
+C:\Users\User.DESKTOP-Q2FT676\Desktop\AIML1\AIML1\obj\Debug\AIML1.exe
+C:\Users\User.DESKTOP-Q2FT676\Desktop\AIML1\AIML1\obj\Debug\AIML1.pdb
